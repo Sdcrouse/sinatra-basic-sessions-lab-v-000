@@ -3,7 +3,7 @@ require_relative 'config/environment'
 class App < Sinatra::Base
   configure do 
     enable :sessions
-    set :session_secret "purple gun kangaroo"
+    set :session_secret, "purple gun kangaroo"
   end
   
   get '/' do 
