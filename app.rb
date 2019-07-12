@@ -6,4 +6,7 @@ class App < Sinatra::Base
     set :session_secret "purple gun kangaroo"
   end
   
+  get '/' do 
+    
+  end
 end
