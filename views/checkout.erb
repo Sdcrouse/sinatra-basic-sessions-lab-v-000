@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Purchase Items Here!</title>
+    <title>Here is your Item!</title>
   </head>
   
   <body>
-    <h1>Welcome to my Online Mall!</h1>
-    <h2>What would you like to purchase?</h2>
-    
-    
-    <form method="post" action="/checkout">
-      <label for="item">Item to Purchase:</label>
-      <input type="text" id="item" name="item" />
-      
-      <button id="submit">Go to Checkout</button>
-    </form>
+    <h1>You have purchased an item!</h1>
+    <h2>Here is your item:</h2>
+    <p><%= @session["item"] %></p>
   </body>
 </html>
